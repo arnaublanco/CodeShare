@@ -1,0 +1,15 @@
+{
+  "name": "codeshare-server",
+  "version": "0.0.1",
+  "private": true,
+  "description": "CodeShare local classroom WebSocket relay server.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
+

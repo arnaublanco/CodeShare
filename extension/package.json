@@ -1,0 +1,52 @@
+{
+  "name": "codeshare",
+  "displayName": "CodeShare",
+  "description": "Real-time collaborative coding over a local WiFi network (classroom MVP).",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:codeshare.startHost",
+    "onCommand:codeshare.join",
+    "onCommand:codeshare.disconnect"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "codeshare.startHost",
+        "title": "CodeShare: Start Session (Host)"
+      },
+      {
+        "command": "codeshare.join",
+        "title": "CodeShare: Join Session"
+      },
+      {
+        "command": "codeshare.disconnect",
+        "title": "CodeShare: Disconnect"
+      }
+    ]
+  },
+  "main": "./out/extension.js",
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -p ./ -w",
+    "pretest": "npm run compile",
+    "lint": "echo \"No lint configured\""
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/vscode": "^1.90.0",
+    "@types/ws": "^8.18.0",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
+

@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "task": "npm:compile",
+      "label": "npm: compile (extension)",
+      "script": "compile",
+      "path": "extension",
+      "problemMatcher": []
+    }
+  ]
+}
+
